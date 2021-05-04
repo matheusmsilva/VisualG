@@ -1,0 +1,51 @@
+Algoritmo "CPF"
+
+Var
+A, B, C, D, E1, F, G, H, I, J, K, resto: inteiro
+
+Inicio
+Escreva("Escreva o primeiro dígito: ")
+Leia(a)
+Escreva("Escreva o segundo dígito: ")
+Leia(b)
+Escreva("Escreva o terceiro dígito: ")
+Leia(c)
+Escreva("Escreva o quatro dígito: ")
+Leia(d)
+Escreva("Escreva o quinto dígito: ")
+Leia(e1)
+Escreva("Escreva o sexto dígito: ")
+Leia(F)
+Escreva("Escreva o sétimo dígito: ")
+Leia(G)
+Escreva("Escreva o oitavo dígito: ")
+Leia(h)
+Escreva("Escreva o nono dígito: ")
+Leia(i)
+limpatela
+Escreval("CPF SEM DÍGITO:", a, b, c,".", d, e1, f, ".", g, h, i)
+
+j <- (10*a)+(9*b)+(8*c)+(7*d)+(6*e1)+(5*f)+(4*g)+(3*h)+(2*i)
+resto <- J MOD 11
+se (resto <=1) então
+J <- 0
+senão
+     se (resto >= 2) e (resto <=10) então
+     	J <- 11-resto
+     	Escreval("O primeiro dígito é: ", J)
+     fimse
+fimse
+K <- (11*A)+(10*B)+(9*C)+(8*D)+(7*E1)+(6*F)+(5*G)+(4*H)+(3*I)+(2*J)
+resto <- k MOD 11
+se (resto <=1) então
+K <- 0
+senao
+se (resto >= 2) e (resto <=10) então
+     K <- 11-resto
+     Escreval("O segundo dígito é: ", K)
+     fimse
+fimse
+Escreval("-------------------------")
+Escreval("O CPF É:", a, b, c, d, e1, f, g, h, i, j, k)
+
+Fimalgoritmo
