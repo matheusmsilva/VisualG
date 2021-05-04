@@ -1,0 +1,41 @@
+Algoritmo "seletor"
+
+Var
+sex, vb: caractere
+idade, cab, cont, cont1: inteiro
+
+Inicio
+Repita
+  Escreval("----------------------------")
+  Escreval("     SELETOR DE PESSOAS     ")
+  Escreval("----------------------------")
+  Escreval("Qual o sexo? [F/M]")
+  Leia(sex)
+  Escreval("Qual a idade?")
+  leia(idade)
+  Escreval("Qual a cor do cabelo?")
+  Escreval("----------------------------")
+  Escreval("[1] preto")
+  Escreval("[2] castanho")
+  Escreval("[3] loiro")
+  Escreval("[4] ruivo")
+  leia(cab)
+
+  se (sex = "M") e (idade > 18) e (cab = 2) entao
+     cont <- cont + 1
+  fimse
+  
+  se (sex = "F") e (cab = 3) e ((idade > 25) e (idade < 30)) entao
+     cont1 <- cont1 +1
+  fimse
+  
+  Escreval("Quer continuar? [S/N]")
+  leia(vb)
+até (vb = "N")
+
+Limpatela
+Escreval("O total de homens com mais de 18 e cabelo castanho é: ", cont)
+Escreval("O total de mulheres entre 25 e 30 anos com cabelo loiro é: ", cont1)
+
+
+Fimalgoritmo
