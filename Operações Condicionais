@@ -1,0 +1,38 @@
+Algoritmo "OperacoesCondicionais"
+
+Var
+   N1, N2, M: real
+Inicio
+
+   Escreval("ESCOLA MATIAS")
+   Escreva("Primeira nota: ")
+   Leia(N1)
+   Escreva("Segunda nota: ")
+   Leia(N2)
+   M <- (N1 + N2)/2
+   Escreval("Média: ", M)
+   se (M >= 9) entao
+      Escreval("Aproveitamento: A")
+   senao
+        se (M < 8.9) e (M > 8) entao
+        Escreval("Aproveitamento: B")
+        senao
+             se (M < 7.9) e (M > 7) entao
+                Escreval("Aproveitamento: C")
+             senao
+                  se (M < 6.9) e (M > 6) entao
+                     Escreval("Aproveitamento: D")
+                  senao
+                       se (M < 5.9) e (M >= 5) entao
+                          Escreval("Aproveitamento: E")
+                       senao
+                            se (M < 5) entao
+                               Escreval("Aproveitamento: F")
+                            Fimse
+                       Fimse
+                  Fimse
+             Fimse
+        Fimse
+   FimSe
+
+Fimalgoritmo
