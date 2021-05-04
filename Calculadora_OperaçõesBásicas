@@ -1,0 +1,60 @@
+Algoritmo "Calculadora"
+Var
+v1, v2: real
+   op, S: inteiro
+
+Inicio
+Repita
+   Escreval("=======================================")
+   Escreval("              CALCULADORA              ")
+   Escreval("=======================================")
+   Escreval(" ")
+   Escreval("Qual operação deseja realizar? (Digite o número)")
+   Escreval("[1] Adição, [2] Subtração, [3] Divisão, [4] Multiplicação")
+   leia(op)
+   Escreval(" ")
+   
+   se (op = 1) então
+      Escreva("Escreva o 1o. valor: ")
+      leia(v1)
+      Escreva("Escreva o 2o. valor: ")
+      leia(v2)
+      Escreval(" ")
+      Escreval("A soma dos valores é: ", v1 + v2)
+   fimse
+   
+   se (op = 2) então
+      Escreva("Escreva o 1o. valor: ")
+      leia(v1)
+      Escreva("Escreva o 2o. valor: ")
+      leia(v2)
+      Escreval(" ")
+      Escreva("A subtração dos valores é: ", v1 - v2)
+   fimse
+   
+   se (op = 3) então
+      Escreva("Escreva o 1o. valor ")
+      leia(v1)
+      Escreva("Escreva o 2o. valor: ")
+      leia(v2)
+      Escreval(" ")
+      Escreval("A divisão dos valores é: ", v1 / v2)
+   fimse
+   
+   se (op = 4) então
+      Escreva("Escreva o 1o. valor: ")
+      leia(v1)
+      Escreva("Escreva o 2o. valor: ")
+      leia(v2)
+      Escreval(" ")
+      Escreval("A multiplicação dos valores é: ", v1 * v2)
+   fimse
+   
+   Escreval(" ")
+   Escreval("Você deseja continuar?")
+   Escreval("Pressione 0 para sair e 1 para continuar")
+   Leia(S)
+   limpatela
+até (S = 0)
+
+FimAlgoritmo
