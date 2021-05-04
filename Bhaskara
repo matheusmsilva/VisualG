@@ -1,0 +1,40 @@
+Algoritmo "Bhaskara"
+Var
+A, B, C: Real
+delta, x1, x2: Real
+cond: inteiro
+
+Inicio
+cond <- 1
+enquanto cond = 1 faca
+
+Escreval ("Digite o Valor de A")
+Leia (A)
+Escreval ("Digite o Valor de B")
+Leia (B)
+Escreval ("Digite o Valor de C") /
+Leia (C)
+
+delta <- (B^2-4*A*C) /
+
+se delta > 0 entao
+   x1 <- (-B + raizq(delta))/(2*A)
+   x2 <- (-B - raizq(delta))/(2*A)
+   Escreval ("O valor de x1 é = ", x1 ," e o valor de x2 é = ", x2)
+fimse
+
+se delta < 0 entao
+   Escreval ("Não há resposta real para essa expressão, o valor de delta é", Delta)
+fimse
+
+se delta = 0 entao
+   x1 <- -B/(2*A)
+   Escreval ("O valor de x1 e x2 são iguais = ", x1)
+fimse
+
+Escreval ("Gostaria de Calcular outra raiz? Digite 1 para sim, e 2 para não")
+Leia (cond)
+Limpatela
+
+Fimenquanto
+FimAlgoritmo
