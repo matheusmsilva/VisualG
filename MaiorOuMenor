@@ -1,0 +1,21 @@
+Algoritmo "MaiorOuMenor"
+Var
+A, B: real
+
+Inicio
+Escreva("Escreva o valor de A: ")
+leia(A)
+Escreva("Escreva o valor de B: ")
+leia(B)
+
+se (A=B) entao
+   Escreval("Os valores são iguais")
+senao
+   se (A > B) entao
+       Escreval(A, " é maior do que ", B)
+   senao
+       Escreval(B, " é maior do que ", A)
+   fimse
+fimse
+
+FimAlgoritmo
