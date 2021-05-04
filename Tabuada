@@ -1,0 +1,17 @@
+Algoritmo "Tabuada"
+var
+   cont, tab, res: real
+
+inicio
+      Escreval("TABUADA")
+      Escreval(" ")
+      Escreva("Digite um número para exibir a sua tabuada: ")
+      Leia(tab)
+      cont <- 0
+      
+      Repita
+      res <- Tab*cont
+      Escreval(tab, " x", cont, " =", res)
+      cont <- cont + 1
+      ate (cont > 10)
+FimAlgoritmo
