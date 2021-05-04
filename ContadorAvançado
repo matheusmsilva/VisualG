@@ -1,0 +1,36 @@
+Algoritmo "ContadorAvançado"
+Var
+// Seção de Declarações das variáveis
+   Esc, c, d: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   c <- 1
+   d <- 10
+   Escreval("==================")
+   Escreval("|  MENU CONTADOR |")
+   Escreval("==================")
+   Escreval("|   [1] 1 a 10   |")
+   Escreval("|   [2] 10 a 1   |")
+   Escreval("|   [3] sair     |")
+   Escreval("==================")
+   Leia(Esc)
+
+   Se (Esc = 1) entao
+      Repita
+      Escreva(c)
+      C <- C + 1
+      até (C > 10)
+   senao
+        se (Esc = 2) entao
+           Repita
+           Escreva (d)
+           D <- D -1
+           Até (D < 1)
+               senao se (Esc = 3) Então
+               fimalgoritmo
+        fimse
+   fimse
+
+
+
+Fimalgoritmo
