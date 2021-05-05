@@ -1,0 +1,35 @@
+Algoritmo "Vetor01"
+Var
+// Seção de Declarações das variáveis 
+media, n1, n2: vetor [1..4] de real
+nome: vetor [1..4] de caractere
+c: inteiro
+SM, MT: real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   SM <- 0
+   para c <- 1 ate 4 faca
+   aleatorio 0, 10
+     EscrevaL("ALUNO", c)
+     Escreva("Nome: ")
+     Leia(nome[c])
+     Escreva("1ª nota: ")
+     Leia(n1[c])
+     Escreva("2ª nota: ")
+     leia(n2[c])
+     media[c] <- (n1[c] + n2[c])/2
+     Escreva("Média: ", media[c])
+     Escreval(" ")
+     SM <- SM + media[c])
+     aleatorio off
+   FimPara
+   limpatela
+
+   para c <- 1 ate 4 faca
+     Escreval("Aluno", c," - ", nome[c]:15, media[c]:4:1)
+     Se (media[c] > SM/4) entao
+       Escreval("O aluno ", c, " está acima da média.")
+     FimSe
+   fimpara
+   
+Fimalgoritmo
